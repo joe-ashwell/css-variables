@@ -1,0 +1,20 @@
+:root {
+  --spacing: 10px;
+  --my-colour: #FA8000;
+  --bg-image: url('https://images.unsplash.com/photo-1545604698-568084db231c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+}
+
+* {
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+div.bg-image {
+  width: 100%;
+  background-image: var(--bg-image);
+}
+
