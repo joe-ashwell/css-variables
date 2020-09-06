@@ -1,6 +1,8 @@
 const inputs = document.querySelectorAll('.controls input');
+const sliders = document.querySelectorAll('.controls input[type="range"]');
 
 const bgImage = document.querySelector('div.bg-image');
+const bgImageH2 = document.querySelector('h2.bg-image');
 
 function whatIsTheUpdate() {
 
@@ -11,15 +13,11 @@ function whatIsTheUpdate() {
 
   if (this.name === 'image-url') {
     bgImage.style.backgroundImage = `url(${this.value})`;
+  } else if (this.name === 'text-input') {
+    bgImageH2.innerHTML = this.value;
   }
 
 }
 
-function updateImage() {
-
-  bgImage.style.backgroundImage = `url(${this.value})`;
-
-}
-
 inputs.forEach(input => input.addEventListener('change', whatIsTheUpdate));
-inputs.forEach(input => input.addEventListener('mousemove', whatIsTheUpdate));
+sliders.forEach(slider => slider.addEventListener('mousemove', whatIsTheUpdate));

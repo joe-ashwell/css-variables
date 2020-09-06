@@ -8,35 +8,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hero Builder</span></h1>
   <main>
     <div class="left-div controls">
 
         <label for="image-url">Image URL</label>
           <input type="url" name="image-url" placeholder="https://enteryoururl.com">
 
-        <label for="overlay-colour">Overlay Colour</label>
-          <input type="color" name="overlay-colour" value="#181818">
-
-        <label for="image-opacity">Overlay Opacity</label>
-          <input type="range" min="0" max="100" value="50" data-unit="%" name="image-opacity">
-
-        <label for="text-input">Text Content</label>
+        <label for="text-input">Text content</label>
           <input type="text" name="text-input" placeholder="Enter your text...">
 
-        <label for="text-colour">Text Colour</label>
-          <input type="color" name="text-colour" value="#181818">
+        <label for="text-size">Font size</label>
+          <input type="range" min="1" max="200" value="58" data-unit="px" name="text-size">
 
-        <label for="text-position-vertical">Text Vertical Positioning</label>
+        <label for="text-colour">Text colour</label>
+          <input type="color" name="text-colour" value="#ffffff">
+
+        <label for="text-position-vertical">Text vertical positioning</label>
           <input type="range" name="text-position-vertical" data-unit="%" min="0" max="53" value="28">
 
-        <label for="text-position-horizontal">Text Horizontal Positioning</label>
-          <input type="range" name="text-position-horizontal" data-unit="%" min="0" max="100" value="42">
-          
+        <label for="text-position-horizontal">Text horizontal positioning</label>
+          <input type="range" name="text-position-horizontal" data-unit="%" min="0" max="100" value="22">
+
       </div>
     </div> 
     <div class="right-div bg-image">
-      <h1 class="bg-image">Testing header</h1>
+      <h2 class="bg-image">Lorem ipsum hero text</h2>
     </div>
   </main>
   <script src="app.js"></script>
