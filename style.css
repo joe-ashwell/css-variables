@@ -1,20 +1,60 @@
+/*======== Variables ========*/
+
 :root {
-  --spacing: 10px;
-  --my-colour: #FA8000;
-  --bg-image: url('https://images.unsplash.com/photo-1545604698-568084db231c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+  --image-url: ('https://images.unsplash.com/photo-1545604698-568084db231c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+  --overlay-colour: rgba(0, 0, 0, 0.4);
+  --overlay-opacity: 50%;
+  --text-colour: white;
+  --text-position-vertical: 28%;
+  --text-position-horizontal: 42%;
 }
+
+/*======== General ========*/
 
 * {
   font-family: 'Oxygen', sans-serif;
-  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  min-height: 90vh;
+}
+
+.left-div {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.right-div {
+  width: 75%;
 }
 
 body {
   margin: 0;
 }
 
-div.bg-image {
-  width: 100%;
-  background-image: var(--bg-image);
+
+/*======== Left hand editor ========*/
+
+.left-div {
+  margin: 0 2rem;
 }
 
+/*======== Hero ========*/
+
+div.bg-image {
+  width: 100%;
+  background-color: linear-gradient(
+      rgb(var(--overlay-colour)),
+      rgb(var(--overlay-colour))
+    );
+  background-image: url('https://images.unsplash.com/photo-1545604698-568084db231c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');    
+}
+
+h1.bg-image {
+  color: var(--text-colour);
+  margin-top: var(--text-position-vertical);
+  margin-left: var(--text-position-horizontal);
+}
