@@ -47,8 +47,8 @@ input[type="text"] {
   padding: 0.8rem;
 }
 
-placeholder{
-  font-size: 19px;
+::placeholder {
+  font-size: 15px;
 }
 
 label {
