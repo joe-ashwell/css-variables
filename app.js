@@ -9,12 +9,18 @@ function whatIsTheUpdate() {
   // Default to nothing if there is no unit
   const unit = this.dataset.unit || "";
   
-  document.documentElement.style.setProperty(`--${this.name}`, this.value + unit)
+  if ( this.name === 'image-url' ) {
 
-  if (this.name === 'image-url') {
     bgImage.style.backgroundImage = `url(${this.value})`;
-  } else if (this.name === 'text-input') {
+
+  } else if ( this.name === 'text-input' ) {
+
     bgImageH2.innerHTML = this.value;
+
+  } else {
+
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + unit)
+    
   }
 
 }
